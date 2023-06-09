@@ -1,2 +1,2 @@
 ## PerfProject
-quick repro for 0.72.0-rc.5 performance issues
+quick repro for 0.72.0-rc.5 performance issues. This is based on the create react native app, and uses one other library (react-native-calendars). We are seeing more performance issues when loading these calendars after upgrading our RN version (previously 0.63.3). Once installed, you can toggle the calendar on/off and see some of the lag. We have a bit more custom logic in the Day component that i suspect slows things down in our real version, but the performance on the old RN is still much smoother.
